@@ -1,0 +1,64 @@
+@im@import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gasoek-one');
+@import url('https://api.fonts.coollabs.io/css?family=Proxima+Nova&display=swap');
+@import url('https://fonts.cdnfonts.com/css/proxima-nova');
+@import url('https://fonts.cdnfonts.com/css/lexend');
+@import url('https://api.fonts.coollabs.io/css2?family=Montserrat&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding-block: 4rem;
+  color: #c0c0c0;
+  font-family: 'Montserrat', sans-serif;
+  background: #0C0C0C;
+}
+
+.article {
+  display: grid;
+  --gutter: 3rem;
+/*   grid-template-columns:
+    1fr
+    min(65ch, 100%)
+    1fr; */
+	grid-template-columns:
+ 		[page-start col1-start] minmax(3rem, 1fr)
+		[breakout-start] 1fr
+		[content-start] min(100% - (var(--gutter) * 2), 80ch)
+		[content-end] 1fr
+		[breakout-end] minmax(3rem, 1fr)
+		[page-end];
+}
+
+.article > * {
+  grid-column: content;
+/*   grid-column: content; */
+}
+
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / -1;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: 'Proxima Nova';
+}
+
+h1, p:first-of-type {
+  margin-bottom: 3rem;
+}
+
+p {
+  grid-column: content;
+  margin-bottom: 1rem;
+}
+
+p:nth-of-type(2) {
+  margin-top: 3rem;
+}
