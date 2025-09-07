@@ -56,7 +56,7 @@ h1, p:first-of-type {
 
 p {
   grid-column: content;
-  margin-bottom: 2.5ren;
+  margin-bottom: 2.5rem;
   line-height: 1.5rem;
 }
 
