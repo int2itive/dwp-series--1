@@ -48,12 +48,16 @@ body {
 
 h1 {
   font-family: 'Proxima Nova';
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h1, p:first-of-type {
   margin-bottom: 3rem;
 }
+
+p:first-of-type {
+  font-size: 2rem;
+} 
 
 p {
   grid-column: content;
