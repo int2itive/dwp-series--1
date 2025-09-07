@@ -56,8 +56,8 @@ h1, p:first-of-type {
 
 p {
   grid-column: content;
-  margin-bottom: 1.5rem;
-  line-height: 1.4;
+  margin-bottom: 2.5ren;
+  line-height: 1.5rem;
 }
 
 p:nth-of-type(2) {
