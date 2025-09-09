@@ -64,8 +64,9 @@ article .header p {
 }
 
 .article__body p {
-  margin-block-end: 4rem;
+  font-size: 2.2rem;
   line-height: 1.5;
+  margin-block-end: 4rem;
 }
 
 .article__body p:first-child {
