@@ -47,6 +47,10 @@ article .header > * {
   margin-block-end: 2rem;
 }
 
+article .header p {
+  font-size: 2rem;
+}
+
 .full-bleed {
   width: 100%;
   grid-column: 1 / -1;
