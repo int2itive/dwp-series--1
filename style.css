@@ -39,6 +39,14 @@ body {
 /*   grid-column: content; */
 }
 
+.article header {
+  grid-column: subgrid;
+} 
+
+.article header > * {
+  grid-column: content;
+}
+
 .full-bleed {
   width: 100%;
   grid-column: 1 / -1;
