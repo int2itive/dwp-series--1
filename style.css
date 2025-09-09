@@ -44,11 +44,11 @@ article .header {
 }
 
 article .header > * {
-  margin-block-end: 2rem;
+  margin-block-end: 4rem;
 }
 
 article .header p {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .full-bleed {
@@ -64,7 +64,7 @@ article .header p {
 
 .article__body p {
   margin-block-end: 2rem;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .article__body p:first-child {
