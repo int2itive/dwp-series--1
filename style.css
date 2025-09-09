@@ -44,11 +44,12 @@ article .header {
 }
 
 article .header > * {
+  padding-inline-start: 0.75rem;
   margin-block-end: 4rem;
 }
 
 article .header p {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .full-bleed {
