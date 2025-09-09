@@ -43,7 +43,7 @@ article:not(:first-of-type) {
 /*   grid-column: content; */
 }
 
-.article header {
+header {
   grid-column: subgrid;
   padding-inline-start: 3rem;
 } 
