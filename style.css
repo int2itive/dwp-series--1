@@ -18,6 +18,10 @@ body {
   background: #0C0C0C;
 }
 
+article:not(:first-of-type) {
+  margin-block-start: 4.5rem;
+}
+
 .article {
   display: grid;
   --gutter: 3rem;
