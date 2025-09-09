@@ -19,7 +19,7 @@ body {
 }
 
 article:not(:first-of-type) {
-  margin-block-start: 12.5rem;
+  margin-block-start: 15rem;
 }
 
 .article {
