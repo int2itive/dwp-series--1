@@ -45,6 +45,7 @@ article:not(:first-of-type) {
 
 .article header {
   grid-column: subgrid;
+  padding-inline-start: 3rem;
 } 
 
 .article header > * {
