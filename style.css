@@ -1,4 +1,4 @@
-@im@import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Jockey+One&display=swap');
 @import url('https://fonts.cdnfonts.com/css/gasoek-one');
 @import url('https://api.fonts.coollabs.io/css?family=Proxima+Nova&display=swap');
 @import url('https://fonts.cdnfonts.com/css/proxima-nova');
@@ -22,7 +22,7 @@ article:not(:first-of-type) {
   margin-block-start: 15rem;
 }
 
-.article {
+.article__body {
   display: grid;
   --gutter: 3rem;
 /*   grid-template-columns:
@@ -38,18 +38,15 @@ article:not(:first-of-type) {
 		[page-end];
 }
 
-.article > * {
+.article__body > * {
   grid-column: content;
 /*   grid-column: content; */
 }
 
-header {
-  grid-column: subgrid;
-  padding-inline-start: 4rem;
-} 
 
-.article header > * {
-  grid-column: content;
+article .header > * {
+  padding-inline-start: 3rem;
+  /*color: red;*/
 }
 
 .full-bleed {
@@ -60,24 +57,31 @@ header {
 }
 
 h1 {
-  font-family: 'Proxima Nova';
+  font-family: 'Montserrat','Proxima Nova';
   font-size: 4rem;
+  line-height: 1;
 }
 
 h1, p:first-of-type {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
 }
 
 p:first-of-type {
   font-size: 2rem;
-} 
+}
 
-p {
-  grid-column: content;
+
+.article__body p {
+  font-size: 1rem;
   margin-bottom: 2.5rem;
   line-height: 1.5rem;
 }
 
-p:nth-of-type(2) {
+.article__body p:nth-of-type(2) {
+  /*font-size: 1rem;*/
   margin-top: 3rem;
 }
