@@ -60,7 +60,7 @@ article .header p {
 }
 
 .article__body {
-  grid-column: content;
+  grid-column: breakout;
 }
 
 .article__body p {
