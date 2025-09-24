@@ -18,6 +18,11 @@ body {
   background: #0C0C0C;
 }
 
+header {
+  border: 0;
+  outline: 0;
+} 
+
 nav {
   display: grid;
   justify-content: center;
