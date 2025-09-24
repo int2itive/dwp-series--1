@@ -11,6 +11,11 @@
   padding: 0;
 }
 
+navy {
+  display: grid;
+  justify-content: center;
+}
+
 body {
   padding-block: 4rem;
   color: #c0c0c0;
