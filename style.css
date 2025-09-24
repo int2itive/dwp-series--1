@@ -28,8 +28,7 @@ nav {
   display: grid;
   justify-content: center;
   width: 100%;
-  margin-block-end: 1.25rem;
-  outline: 1px solid firebrick;
+  margin-block-end: 1rem;
 }
 
 .som--logo-wrap {
