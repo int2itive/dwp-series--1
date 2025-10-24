@@ -84,7 +84,7 @@ article .header p {
 .article__body p {
   /*font-size: 2.2rem;*/
   line-height: 1.5;
-  margin-block-end: 4rem;
+  margin-block-end: 1.5rem;
 }
 
 .article__body p:first-child {
