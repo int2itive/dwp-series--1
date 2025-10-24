@@ -16,6 +16,7 @@ body {
   color: #c0c0c0;
   font-family: 'Montserrat', sans-serif;
   background: #0C0C0C;
+  overflow-x: clip;
 }
 
 header {
