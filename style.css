@@ -52,11 +52,11 @@ article {
   display: grid;
   --gutter: 3rem;
   grid-template-columns:
-    [page-start col1-start] minmax(3rem, 1fr)
+    [page-start col1-start] minmax(1.5rem, 1fr)
     [breakout-start] 1fr
     [content-start] min(100% - (var(--gutter) * 2), 80ch)
     [content-end] 1fr
-    [breakout-end] minmax(3rem, 1fr)
+    [breakout-end] minmax(1.5rem, 1fr)
     [page-end];
 }
 
