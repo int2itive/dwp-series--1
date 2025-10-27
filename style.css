@@ -4,7 +4,9 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova');
 @import url('https://fonts.cdnfonts.com/css/lexend');
 @import url('https://api.fonts.coollabs.io/css2?family=Montserrat&display=swap');
-
+@import url('https://fonts.bunny.net/css?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/*@import url(https://fonts.bunny.net/css?family=montserrat:ital,wght@0,300..800;1,300..800&display=swap);*/
+@import url('https://fonts.bunny.net/css?family=montserrat:500..800');
 
 * {
   margin: 0;
@@ -16,12 +18,13 @@ body {
   color: #c0c0c0;
   font-family: 'Montserrat', sans-serif;
   background: #0C0C0C;
+  overflow-x: clip;
 }
 
 header {
   border: 0;
   outline: 0;
-  padding: 2rem;
+  padding: 1.5rem .5rem;
 } 
 
 nav {
@@ -32,12 +35,13 @@ nav {
 }
 
 .som--logo-wrap {
-  margin-block-end: 1.25rem;
+  /* margin-block-end: 1.25rem; */
 }
 
 h1 {
   font-family: 'Montserrat','Proxima Nova';
-  font-size: 4.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
   line-height: 1;
 }
 article:not(:first-of-type) {
@@ -48,25 +52,45 @@ article {
   display: grid;
   --gutter: 3rem;
   grid-template-columns:
-    [page-start col1-start] minmax(3rem, 1fr)
+    [page-start col1-start] minmax(1.5rem, 1fr)
     [breakout-start] 1fr
     [content-start] min(100% - (var(--gutter) * 2), 80ch)
     [content-end] 1fr
-    [breakout-end] minmax(3rem, 1fr)
+    [breakout-end] minmax(1.5rem, 1fr)
     [page-end];
 }
 
 article .header {
+  position: relative;
   grid-column: breakout;
+  padding-block-start: 1.5rem;
 }
 
 article .header > * {
-  padding-inline-start: 0.75rem;
-  margin-block-end: 4rem;
+  /* padding-inline-start: 0.75rem; */
+  margin-block-end: 1.25rem;
 }
 
 article .header p {
-  font-size: 1.9rem;
+  font-size: .8rem;
+  /*margin-block-end: .92rem;  */
+}
+
+.article__meta {
+  position: absolute;
+  right: -0.875rem;
+    top: 0;
+  /*margin-inline-end: 1rem;*/
+    grid-column: content;
+    color: #0c0c0c;
+    display: inline-block;
+    font-size: .585rem;
+    font-weight: 700;
+    line-height: 1.4;
+    background: hsl(220, 24%, 54%);
+    padding: 0.084rem .425rem;
+    border-radius: 2px;
+    text-transform: uppercase;
 }
 
 .full-bleed {
@@ -81,9 +105,9 @@ article .header p {
 }
 
 .article__body p {
-  font-size: 2.2rem;
+  /*font-size: 2.2rem;*/
   line-height: 1.5;
-  margin-block-end: 4rem;
+  margin-block-end: 1.5rem;
 }
 
 .article__body p:first-child {
