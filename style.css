@@ -41,6 +41,7 @@ nav {
 h1 {
   font-family: 'Montserrat','Proxima Nova';
   font-size: 1.6rem;
+  font-size: clamp(1.6rem, 0.834rem + 2.323vw, 2.5rem);
   font-weight: 500;
   line-height: 1;
 }
@@ -63,7 +64,7 @@ article {
 article .header {
   position: relative;
   grid-column: breakout;
-  padding-block-start: 1.5rem;
+  padding-block-start: 1.75rem;
 }
 
 article .header > * {
@@ -79,18 +80,18 @@ article .header p {
 .article__meta {
   position: absolute;
   right: -0.875rem;
-    top: 0;
-  /*margin-inline-end: 1rem;*/
-    grid-column: content;
-    color: #0c0c0c;
-    display: inline-block;
-    font-size: .585rem;
-    font-weight: 700;
-    line-height: 1.4;
-    background: hsl(220, 24%, 54%);
-    padding: 0.084rem .425rem;
-    border-radius: 2px;
-    text-transform: uppercase;
+  top: 0;
+/*margin-inline-end: 1rem;*/
+  grid-column: content;
+  color: #0c0c0c;
+  display: inline-block;
+  font-size: .585rem;
+  font-weight: 700;
+  line-height: 1.4;
+  background: hsl(220, 24%, 54%);
+  padding: 0.084rem .425rem;
+  border-radius: 2px;
+  text-transform: uppercase;
 }
 
 .full-bleed {
