@@ -64,7 +64,7 @@ article {
 article .header {
   position: relative;
   grid-column: breakout;
-  padding-block-start: 1.75rem;
+  padding-block-start: 2.25rem;
 }
 
 article .header > * {
