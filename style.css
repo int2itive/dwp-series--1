@@ -130,3 +130,9 @@ article .header p {
   text-transform: uppercase;
   font-weight: 700;
 }
+
+article__body .article__tags span {
+  font-size: .625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
