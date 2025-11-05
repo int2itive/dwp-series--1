@@ -102,6 +102,7 @@ article .header p {
 }
 
 .article__body {
+  position: relative;
   grid-column: breakout;
 }
 
@@ -111,6 +112,21 @@ article .header p {
   margin-block-end: 1.5rem;
 }
 
-.article__body p:first-child {
+.article__body p:first-of-type {
   margin-block-start: 4rem;
+}
+
+.article__body .article__tags {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: flex;
+  width: max-content;
+  gap: .45rem;
+}
+
+.article__body .article__tags span {
+  font-size: .625rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
