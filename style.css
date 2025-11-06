@@ -118,7 +118,7 @@ article .header p {
 
 .article__body .article__tags {
   position: absolute;
-  top: 5px;
+  top: 8px;
   left: 0;
   display: flex;
   width: max-content;
