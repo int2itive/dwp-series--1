@@ -83,15 +83,16 @@ article .header p {
   top: 0;
 /*margin-inline-end: 1rem;*/
   grid-column: content;
-  color: #0c0c0c;
+  color: #c0c0c0;
   display: inline-block;
   font-size: .585rem;
   font-weight: 700;
   line-height: 1.4;
-  background: hsl(220, 24%, 54%);
+  background: transparent;
   padding: 0.084rem .425rem;
-  border-radius: 2px;
+  border-radius: 4px;
   text-transform: uppercase;
+  border: 1px solid hsla(220, 24%, 54%, .7);
 }
 
 .full-bleed {
