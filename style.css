@@ -126,8 +126,19 @@ article .header p {
 }
 
 .article__body .article__tags span {
+  display: inline-block;
+  position: relative;
   font-size: .625rem;
   text-transform: uppercase;
   font-weight: 500;
 }
 
+.article__body .article__tags span::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 4px;
+  width: 1px;
+  background: #c0c0c0;
+  height: 30px;
+}
